@@ -40,8 +40,10 @@ function calculate() {
         return;
     }
 
-    try {
+    try{
         const result = eval(expression);
+
+        // Check whether the result is valid
         if (!Number.isFinite(result)) {
 
             display.textContent = 'Error';
