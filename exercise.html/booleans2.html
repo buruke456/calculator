@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      const number = Math.random();
+     let result;
+       if(number>0.5)
+       {
+        result = 'heads';
+       }
+       else {
+        result = 'tails';
+       }
+        
+       const guess = 'heads';
+      if(result === guess){
+      console.log('You win');
+      }
+      else if(result !== guess){
+       console.log('You lose');
+      }
+    </script>
+  </body>
+</html>

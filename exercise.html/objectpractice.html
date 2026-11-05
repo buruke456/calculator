@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice</title>
+  </head>
+  <body>
+  <script>
+  product = {
+  price: 2095,
+  ['delivery-time'] : '3 days'
+  };
+  console.log(product);
+  product.price = 2595;
+  console.log(product);
+product1 = {
+name: 'shirt',
+price:30
+}
+product2 = {
+name:'skirt',
+price:25
+}
+function comparePrice(pro1,pro2){
+if(pro1.price > pro2.price){
+return pro1;
+}
+else {
+return pro2;
+}
+}
+product1 = {
+name: 'shirt',
+price: 35
+}
+product2 = {
+name: 'skirt',
+price: 45
+}
+console.log(comparePrice(product1,product2));
+function isSameProduct(pro3,pro4){
+if(pro3.price === pro4.price && pro3.name === pro4.name){
+  return true;
+}
+else {
+return false;
+}
+}
+console.log(isSameProduct(product1,product2));
+let message = 'Good Morning!';
+Message = message.toLowerCase();
+console.log(Message);
+console.log('Good Morning!'.toLowerCase());
+let str = 'test';
+console.log(str.repeat(3));
+  </script>
+  </body>
+</html>
